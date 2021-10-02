@@ -1,0 +1,63 @@
+@import './mixin';
+@import './theme';
+@import './about';
+@import './products';
+@import './gallery';
+@import './contact';
+
+html{
+    font-size: 15px;
+    @include mobile_devices {font-size: 1em;}
+    @include tablet_devices {font-size: 1.05em;}
+    @include laptop_devices {font-size: 1.1em;}
+    @include desktop_devices {font-size: 1.15em;}
+    line-height: 1.25em;
+}
+
+.home_middle{
+    @extend .clearBoth
+}
+
+.main_area{
+    width: 60%;
+    float: left;
+    padding-right: 20px;
+}
+
+.sideBar{
+    width: 40%;
+    padding: 40px 20px;
+    float: left;
+    p{
+        font-size: .9em;
+    }
+}
+
+.btn-1{
+    margin-top: 40px;
+    padding: 8px 30px;
+    background-color: seagreen;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    @include mobile_devices {
+        background-color: rgb(139, 122, 46);
+    }
+    @include tablet_devices {
+        background-color: rgb(115, 96, 215);
+    }
+    @include laptop_devices {
+        background-color: rgb(46, 103, 139);
+    }
+    @include desktop_devices {
+        background-color: rgb(139, 46, 117);
+    }
+
+}
+
+.btn-2 {
+    @extend .btn-1;
+    @include verticalGradient(lighten($Gray_1, 60%), $Blue_3)
+}
+
+
