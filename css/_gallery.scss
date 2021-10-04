@@ -1,3 +1,41 @@
-.gallery_pics h1 {
-    color: plum;
+.ourImages{
+    margin-top: 50px;
+    @extend .clearBoth;
 }
+
+.onlyImages img{
+    display: block;
+    width: 20%;
+    float: left;
+    padding: 5px;
+
+}
+
+// .....Images With Description......
+.imagesWithDescription{
+    width: 100%;
+    img{width: 100%;};
+    div{margin-top: 3px;}
+    @extend .clearBoth;
+
+}
+
+.holder{
+    width: 33.333%;
+    float: left;
+    padding: 10px;
+}
+
+.img_description {
+    padding: 10px;
+    border: 1px solid rgb(174, 202, 208);
+    border-radius: 4px;
+}
+
+
+// ..........Audio................
+.audio_section{
+    margin-top: 50px;
+}
+.song{margin-top: 15px;}
+

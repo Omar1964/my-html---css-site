@@ -8,7 +8,7 @@
   color: #40474d;
 }
 
-.clearBoth:after, nav ul:after, .home_middle:after {
+.clearBoth:after, nav ul:after, .ourImages:after, .imagesWithDescription:after, .home_middle:after {
   content: '';
   display: block;
   clear: both;
@@ -26,12 +26,12 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #container {
@@ -89,8 +89,47 @@ footer p {
   color: orange;
 }
 
-.gallery_pics h1 {
-  color: plum;
+.ourImages {
+  margin-top: 50px;
+}
+
+.onlyImages img {
+  display: block;
+  width: 20%;
+  float: left;
+  padding: 5px;
+}
+
+.imagesWithDescription {
+  width: 100%;
+}
+
+.imagesWithDescription img {
+  width: 100%;
+}
+
+.imagesWithDescription div {
+  margin-top: 3px;
+}
+
+.holder {
+  width: 33.333%;
+  float: left;
+  padding: 10px;
+}
+
+.img_description {
+  padding: 10px;
+  border: 1px solid #aecad0;
+  border-radius: 4px;
+}
+
+.audio_section {
+  margin-top: 50px;
+}
+
+.song {
+  margin-top: 15px;
 }
 
 .form_info h1 {
@@ -130,6 +169,10 @@ html {
   width: 60%;
   float: left;
   padding-right: 20px;
+}
+
+.main_area h1 {
+  margin-bottom: .5em;
 }
 
 .sideBar {
