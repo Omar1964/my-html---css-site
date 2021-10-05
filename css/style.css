@@ -1,11 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
   color: #40474d;
+}
+
+body h1, body h2, body h3, body h4 {
+  color: #122343;
 }
 
 .clearBoth:after, nav ul:after, .ourImages:after, .imagesWithDescription:after, .home_middle:after {
@@ -14,34 +13,13 @@
   clear: both;
 }
 
-h1 {
-  font-size: 1.8em;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-h4 {
-  font-size: 1em;
-  font-weight: 600;
-}
-
 #container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 20px;
 }
 
 header {
-  padding: 30px 0 5px;
   border-bottom: 1px solid #777f87;
   margin-bottom: 20px;
 }
@@ -51,6 +29,7 @@ header p {
 }
 
 header img {
+  display: block;
   width: 100px;
 }
 
@@ -69,6 +48,11 @@ nav a {
   text-decoration: none;
 }
 
+.middle {
+  margin-top: 90px;
+  background-color: #5272a8;
+}
+
 footer {
   background-color: #40474d;
   padding: 10px 0;
@@ -81,8 +65,13 @@ footer p {
   font-size: .85em;
 }
 
-.our-history h1 {
-  color: green;
+.ourVision h1 {
+  color: #233a63;
+  margin-bottom: .4em;
+}
+
+.ourGoals ul, ol {
+  padding: 5px 0px 0 20px;
 }
 
 .mainBrands h2 {
